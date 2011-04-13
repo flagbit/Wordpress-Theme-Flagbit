@@ -1,0 +1,492 @@
+/*  
+Theme Name: Flagbit Blog Design
+Theme URI: http://www.flagbit.de/
+Description: Das Flagbit Blog Design 
+Version: 1.0
+Author: Flagbit
+Author URI: http://www.flagbit.de
+
+Theme last updated: 27.12.05
+*/
+
+/* Basics and Typography */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: white url(images/header_bg.png) no-repeat scroll center top;
+	font-size: 78%;
+	font-family: Verdana, Arial, sans-serif;
+	color: #4D4D4D;
+	text-align: center;
+}
+fieldset {
+	border: none;
+}
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 1.2em 0;
+}
+ol, ul {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 1.2em 0 1.2em 2em;
+	padding: 0;
+}
+ul {
+	list-style-image: url(images/bullet_grey.png);
+}
+table {
+	padding: 0;
+}
+th {
+	background: #0062A6;
+	color: white;
+}
+th {
+	padding: 4px;
+}
+td {
+	border-bottom: 1px solid silver;
+	padding: 2px 4px;
+}
+tr.even td {
+	background: #F9F9F9;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 1.2em 0;
+	font-family: "Lucida Grande", Tahoma, Arial, sans-serif;
+}
+h1, h2 {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.3em;
+}
+h4 {
+	font-size: 1.2em;
+}
+a {
+	color: #4C4C4C;
+	text-decoration: underline;
+}
+a:link {
+	color: #4C4C4C;
+	text-decoration: underline;
+}
+a:visited {
+	color: #4C4C4C;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	color: #0062A6;
+	text-decoration: none;
+}
+input, textarea, select {
+	border: 1px solid #C1C0B5;
+	background-color: #FAFAF0;
+	font-size: 1em;
+	font-family: "Lucida Sans Unicode", Tahoma, Arial, sans-serif;
+}
+blockquote {
+	margin: 0 20px;
+	padding: 0 20px;
+	border-left: 4px solid #E8E7D0;
+	font-size: 0.9em;
+}
+code, pre {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: #666;
+}
+form, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.small {
+	font-size: 0.9em;
+	color: #999;
+}
+
+/* Layout */
+
+#wrapper {
+	background: transparent;
+	margin: 0 auto;
+	width: 925px;
+	text-align: left;
+}
+#header {
+	width: 100%;
+	height: 92px;
+	margin-bottom: 20px;
+}
+#logo {
+	width: 210px;
+	height: 50px;
+	background: url(images/header_logo.png) top;
+	position: relative;
+	top: 20px;
+	float: left;
+}
+#search {
+	float: right;
+	position: relative;
+	top: 50px;
+}
+#s {
+	height: 16px;
+	width: 140px;
+	border: none;
+	background: #D7D7D7;
+	font-size: 11px;
+	padding: 0px 2px 0px 2px;
+}
+.searchbutton {
+	height: 16px;
+	width: 16px;
+	background: url(images/icons/button_search.png);
+	border: none;
+	position: relative;
+	top: 2px;
+}
+#breadcrumb a {
+	text-decoration: underline;
+}
+#breadcrumb a:hover {
+	text-decoration: none;
+}
+#content-header {
+	width: 925px;
+	height: 90px;
+	background: url(images/content_header.png) top no-repeat;
+	margin-top: 20px;
+}
+#blogname {
+	color: #868788;
+	float: left;
+	position: relative;
+	top: 30px;
+}
+#blogname h1 {
+	color: #868788;
+}
+#slogan {
+	color:#868788;
+	float:left;
+	font-size:1.3em;
+	font-weight:bolder;
+	position:relative;
+	left:50px;
+	top:25px;
+	width:300px;
+}
+#rss-feed {
+	color: #868788;
+	float: right;
+	position: relative;
+	top: 20px;
+	padding-right: 160px;
+}
+#rss-feed img {
+	position: relative;
+	top: 8px;
+}
+#rss-feed a {
+	text-decoration: underline;
+}
+#rss-feed a:hover {
+	text-decoration: none;
+}
+
+	/* Header Styles */
+	#content-header h1 {
+		margin: 0;
+		font-size: 1.8em;
+	}
+	#content-header h1 a {
+		text-decoration: none;
+		color: #0062A6;
+	}
+	
+	
+#content {
+	float: left;
+	width: 585px;
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+} 
+html>body #content {
+	width: 585px;
+}
+* html #content {
+	overflow: hidden;
+	/* So IE won't break things */
+}
+#sidebar {
+	float: left;
+	padding: 1.8em 20px 1.8em 20px;
+	width: 230px;
+	font-size: 0.9em;
+	voice-family: "\"}\""; 
+	voice-family: inherit;
+	width: 190px;
+} 
+html>body #sidebar {
+	width: 300px;
+}
+
+	/* Lots of sidebar styles, so they're below */
+
+#footer {
+	clear: both;
+	font-size: 0.9em;
+	text-align: right;
+	height: 27px;
+	border-top: 1px #D3D3D3 solid;
+}
+
+	/* Footer Styles */
+	#footer p {
+		margin: 0;
+		padding: 10px 0 20px 0;
+		font-size: 0.9em;
+		text-align: right;
+		color: #9393B1;
+	}
+
+	
+	
+/* Sidebar Styles */
+#sidebar h2 {
+	margin: 1.2em 0 0.6em 0;
+	padding: 0 10px 0 0;
+	font-size: 1.4em;
+} 
+html>body #sidebar ul ul ul li a {
+	width: 155px;
+}
+.seperator {
+	height: 20px;
+}
+#sidebar ul {
+	margin: 0px 0px 0px 0px;
+	list-style:none;
+}
+#sidebar .sidebar_category h2 {
+	color: #FFFFFF;
+	background: #0062A6;
+	margin: 0;
+	padding: 3px 0px 5px 5px;
+}
+#sidebar .sidebar_category ul {
+	background:transparent url(images/sidebar_border.png) no-repeat left bottom;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0pt 0pt 1em;
+	padding:0.125em 0pt 0.075em;
+}
+.sidebar_category ul li {
+	background:transparent none repeat scroll 0%;
+	padding:0pt 0pt 2px;
+	font-size:1.0em;
+	line-height:1.5em;
+}
+.sidebar_category ul li.page_item {
+	background:transparent url(images/sidebar_border.png) no-repeat;
+	padding-top:0.3em;
+}
+.sidebar_category ul li a {
+	background:#E0E0E0 url(images/bullet_grey.png) no-repeat 0.9em 0.85em;
+	color:#0062A6;
+	display:block;
+	font-weight:bold;
+	padding:0.5em 2.2em;
+	text-decoration:none;
+}
+.sidebar_category ul li a:hover {
+	background:#0062A6 url(images/bullet_white.png) no-repeat 0.9em 0.85em;
+	color:white;
+}
+.noncat,
+#sidebar .widget {
+	padding-left: 11px;
+}
+/* Blog */
+
+.post {
+	clear: both;
+	color: #4D4D4D;
+}
+.posttitle {
+	color: #0062A6;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-top: 1.2em;
+}
+h2.posttitle {
+	padding-bottom: 10px;
+}
+.postinfo {
+	font-size: 15px;
+	font-weight: bold;
+}
+.postinfo span {
+	padding-top: 20px;
+}
+.author {
+	color: #868788;
+}
+.date {
+	color: #B7B7B7;
+}
+.posttitle a {
+	color: #0062A6;
+	font-size: 1.2em;
+}
+.posttitle a:link, .posttitle a:visited {
+	color: #0062a6;	
+}
+.posttitle a:hover, .posttitle a:active {
+	color: #0062A6;
+	text-decoration: underline;
+}
+.postmeta {
+	margin-top: 0;
+	padding-top: 1px;
+	font-size: 0.9em;
+	color: #999;
+}
+.postmeta img{
+	position: relative;
+	top: 8px;
+}
+.postentry {
+}
+.permalink {
+	margin: 0 1.8em 0 0;
+	padding: 0 0 0 14px;
+	background: url(images/permalink.gif) no-repeat center left;
+}
+
+
+/* Comments */
+
+#commentlist {
+	margin: 1.2em 0;
+	padding: 0 0 4px 0;
+	border-bottom: 1px solid #D3D3D3;
+	border-top: 1px solid #D3D3D3;
+	list-style-type: none;
+}
+#commentlist a {
+	color: #0062A6;
+	text-decoration: none;
+}
+#commentlist a:hover {
+	color: #0062A6;
+	text-decoration: none;
+}
+#commentlist li {
+	padding: 5px 20px 1px 20px;
+	background-color: #FFF;
+	background: url(images/spacer/comments_spacer.png);
+}
+#commentlist p {
+	margin: 0px;
+}
+#postcomment {
+	clear: both;
+	color: #4D4D4D;
+	margin-top: 0;
+	padding-top: 1.2em;
+}
+.alt {
+	background-color: #FAFAF0 !important;
+}
+.comment-author {
+	color: #B7B7B7;
+	margin: 0;
+	font-size: 1.4em;
+	font-style: normal;
+	font-weight: bold;
+}
+.commentmeta {
+	margin-top: 0;
+	font-size: 0.9em;
+	color: #999;
+}
+h2#comments {
+	overflow: hidden;
+	font-size: 1.0em;
+}
+.homelink {
+	float: right;
+	color: #4D4D4D;
+}
+.commentlink {
+	float: left;
+	color: #4D4D4D;
+}
+#content label {
+	float: left;
+	width: 100px;
+}
+#content input, #content textarea {
+	border: 1px solid #808080;
+	padding-left: 2px;
+	background: #FFFFFF;
+}
+#content textarea {
+	width: 288px;
+	height: 101px;
+}
+#submit {
+	width: 177px;
+	background: #FFFFFF;
+}
+.dean_ch {
+	background-color:#F0F0F0;
+	border:1px dotted #A0A0A0;
+	color:#0000BB;
+	font-family:'Courier New',Courier,monospace;
+	overflow: auto;
+}
+
+.navigation {
+	overflow: hidden;
+	padding: 0 0 10px 0;
+}
+
+/* Attachment positioning */
+dt.gallery-icon img.attachment-thumbnail,
+div.wp-caption {
+	background: #EEEEEE url(images/attachment_bg.png) bottom left repeat-x;
+	border: 1px solid #0062A6;
+}
+dt.gallery-icon img.attachment-thumbnail,
+div.wp-caption img {
+	padding: 5px;
+}
+dd.gallery-caption,
+div.wp-caption p {
+	font-size: 0.8em;
+	margin: 0 5px 5px;
+	padding: 0;
+	text-align: center;
+}
+img.alignright,
+div.alignright {
+	clear: right;
+	float: right;
+	margin-left: 10px;
+}
+img.alignleft,
+div.alignleft {
+	clear: left;
+	float: left;
+	margin-right: 10px;
+}

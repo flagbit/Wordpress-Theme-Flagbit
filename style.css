@@ -90,10 +90,11 @@ input, textarea, select {
 	font-family: "Lucida Sans Unicode", Tahoma, Arial, sans-serif;
 }
 blockquote {
-	margin: 0 20px;
-	padding: 0 20px;
-	border-left: 4px solid #E8E7D0;
-	font-size: 0.9em;
+	color: #868788;
+	font-style: italic;
+	margin: 0 5px;
+	padding: 0 10px;
+	border-left: 4px solid #B7B7B7;
 }
 code, pre {
 	font-family: monospace;

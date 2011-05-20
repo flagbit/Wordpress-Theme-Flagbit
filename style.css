@@ -26,7 +26,7 @@ fieldset {
 p {
 	font-size: 1em;
 	line-height: 1.5em;
-	margin: 1.2em 0;
+	margin: 0.7em 0;
 }
 ol, ul {
 	font-size: 1em;
@@ -373,7 +373,7 @@ h2.posttitle {
 }
 
 
-/* Comments */
+/* 	s */
 
 #commentlist {
 	margin: 1.2em 0;
@@ -395,8 +395,8 @@ h2.posttitle {
 	background-color: #FFF;
 	background: url(images/spacer/comments_spacer.png);
 }
-#commentlist p {
-	margin: 0px;
+#commentlist img.avatar {
+	margin-right: 0.3em;
 }
 #postcomment {
 	clear: both;

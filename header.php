@@ -29,6 +29,11 @@
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 
 	<?php wp_head(); ?>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('input[placeholder]').placeholderFunction('focus');
+	});
+	</script>
 </head>
 
 <body>

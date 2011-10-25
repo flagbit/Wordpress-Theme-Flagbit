@@ -23,19 +23,26 @@ body {
 fieldset {
 	border: none;
 }
+p, li, dt, dd {
+    font-size: 1em;
+    line-height: 1.5em;
+}
 p {
-	font-size: 1em;
-	line-height: 1.5em;
 	margin: 0.7em 0;
 }
 ol, ul {
-	font-size: 1em;
-	line-height: 1.5em;
 	margin: 1.2em 0 1.2em 2em;
 	padding: 0;
 }
 ul {
-	list-style-image: url(images/bullet_grey.png);
+    list-style-image: url(images/bullet_grey.png);
+}
+dt {
+	font-weight: bold;
+	margin-top: 1.2em;
+}
+dd {
+	margin: 0.6em 0 0 2em;
 }
 table {
 	padding: 0;

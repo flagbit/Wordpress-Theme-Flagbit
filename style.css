@@ -27,7 +27,8 @@ p, li, dt, dd {
     font-size: 1em;
     line-height: 1.5em;
 }
-p {
+p,
+div.wp_syntax {
 	margin: 0.7em 0;
 }
 ol, ul {

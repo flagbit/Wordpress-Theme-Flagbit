@@ -1,6 +1,7 @@
 <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 <fieldset>
-<input type="text" placeholder="Suche ...<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
-<input type="submit" value="" class="searchbutton" />
+<label for="s" class="hidden">Bitte Suchbegriff eingeben</label>
+<input type="text" placeholder="Bitte Suchbegriff eingeben" value="<?php echo esc_html($s, 1); ?>" name="s" id="s" />
+<button class="searchbutton" type="submit"><span>Suchen</span></button>
 </fieldset>
 </form>

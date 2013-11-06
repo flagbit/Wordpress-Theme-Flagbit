@@ -1078,3 +1078,63 @@ div.alignleft {
     padding-left: 10px;
     overflow: hidden;
 }
+
+@media screen and (max-width: 850px){
+    #header{
+        overflow: hidden;
+        height: 190px;
+    }
+
+    #slogan{
+        width: 66%;
+    }
+
+    .content-wrapper{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #header{
+        overflow: hidden;
+        height: 280px;
+    }
+
+    .logo{
+        margin-top: 6%;
+    }
+
+    #slogan{
+        width: 100%;
+        margin-top: 27%;
+
+    }
+
+    #topbar{
+        display: block;
+        overflow: hidden;
+        height: auto;
+        padding-bottom: 5px;
+    }
+
+    .content-wrapper{
+        width: 100%;
+    }
+
+    #footer{
+        min-height: 250px;
+    }
+
+    .footer-content{
+        min-height: 250px;
+    }
+
+    .sidebar{
+        width: 100% !important;
+        min-width: 240px !important;
+    }
+
+    span#u_0_2{
+        display: block;
+    }
+}

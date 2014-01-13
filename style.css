@@ -200,6 +200,7 @@ form, img {
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 .small {
@@ -354,23 +355,19 @@ img {
 	color: #A9A9A8;
 	text-decoration: none;
 	display: block;
-	padding-top: 7px;
+	margin-top: 7px;
+	background: url(images/icons/icons.png) 0 -166px no-repeat;
 }
 
 .rss-feed a:hover {
 	color: #FFFFFF;
+	background-position: 0 -150px;
 }
 
 .rss-feed a span {
-	margin-right: 5px;
-	display: inline-block;
+	margin-left: 20px;
+	display: block;
 	height: 16px;
-	width: 15px;
-	background: url(images/icons/icons.png) 0 -166px no-repeat;
-}
-
-.rss-feed a:hover span {
-	background-position: 0 -150px;
 }
 
 /* Header Styles */
@@ -405,7 +402,8 @@ img {
 }
 
 html>body #content .content-wrapper {
-	max-width: 650px;
+	max-width: 71%;
+	margin-right: 10px;
 }
 
 * html #content .content-wrapper {
@@ -452,6 +450,7 @@ html>body #content .content-wrapper {
 
 html>body .sidebar {
 	width: 200px;
+	padding-left: 0;
 }
 
 /* Footer Styles */
@@ -503,6 +502,7 @@ html>body .sidebar {
 	margin: 0;
 	padding: 10px 0;
 	text-align: right;
+	overflow: hidden;
 }
 
 #footer .copy p > * {
@@ -744,7 +744,7 @@ html>body .sidebar ul ul ul li a {
 .post {
 	clear: both;
 	color: #4D4D4D;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .posttitle {
@@ -1050,10 +1050,11 @@ div.alignleft {
 	clear: left;
 	float: left;
 	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 .postauthor{
-	margin: 20px 10px 30px 0px;
+	margin: 20px 10px 20px 0px;
 	padding: 10px;
 	overflow: hidden;
 	border: 1px solid #D2D1D1;
@@ -1061,7 +1062,6 @@ div.alignleft {
 	border-radius: 7px 7px 7px 7px;
 	background-color: #E5E5E5;
 	color: #606060;
-	margin-bottom: 20px;
 }
 
 .postauthor h4{
@@ -1079,34 +1079,97 @@ div.alignleft {
 	overflow: hidden;
 }
 
-@media screen and (max-width: 850px){
-	#header {
-		overflow: hidden;
-		height: 190px;
-	}
-
+@media screen and (max-width: 870px) {
 	#slogan {
-		width: 66%;
+		width: 60%;
+		top: 25px;
+		margin-right: 0;
 	}
 
 	.content-wrapper {
-		width: 100%;
+		max-width: 65% !important;
 	}
 }
 
-@media screen and (max-width: 500px){
-	#header {
-		overflow: hidden;
-		height: 280px;
+@media screen and (max-width: 850px) {
+	.content-wrapper {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	#slogan {
+		font-size: 1.7em;
+		top: 0;
+	}
+
+	.footer-content .copy p > span {
+		width: 50%;
+		display: block;
+		float: right;
+	}
+
+	.footer-content .copy p > a {
+		display: none;
 	}
 
 	.logo {
-		margin-top: 6%;
+		top: 48px;
+	}
+
+	.logo img {
+		max-width: 80%;
+		height: auto;
+		float: right;
+	}
+
+	#header .header-wrap {
+		height: 90px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.sidebar {
+		display: none;
+	}
+
+	.content-wrapper {
+		max-width: 100% !important;
+	}
+
+	.rss-feed a {
+		width: 15px;
+		height: 16px;
+	}
+
+	.rss-feed a span {
+		display: none;
+	}
+
+	#topbar .sml > span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#slogan {
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.gallery-item dt {
+		margin-top: 0;
+	}
+
+	.gallery-item img {
+		max-width: 85%;
+		height: auto;
 	}
 
 	#slogan {
-		width: 100%;
-		margin-top: 27%;
+		width: 60%;
+		font-size: 1.5em;
 	}
 
 	#topbar {
@@ -1118,14 +1181,6 @@ div.alignleft {
 
 	.content-wrapper {
 		width: 100%;
-	}
-
-	#footer {
-		min-height: 250px;
-	}
-
-	.footer-content {
-		min-height: 250px;
 	}
 
 	.sidebar {

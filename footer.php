@@ -42,7 +42,9 @@
 		</li>
 		<li>
 			<div class="rss-feed">
-				<a class="rss-link" title="RSS Feed" href="?feed=rss2"><span>&nbsp;</span>RSS Feed abonnieren</a>
+				<a class="rss-link" title="RSS Feed" href="?feed=rss2">
+					<span class="rss-label">RSS Feed abonnieren</span>
+				</a>
 			</div>
 		</li>
 		<li class="last">
@@ -54,7 +56,6 @@
 	</ul>
 </nav>
 <?php do_action('wp_footer'); ?>
-<script type="text/javascript" src="<?php print(get_stylesheet_directory_uri() . '/js/jquery.placeholder.1.3.min.js'); ?>"></script>
 <script type="text/javascript">
 	var _gaq=[['_setAccount','UA-16989173-1'],['_gat._anonymizeIp'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

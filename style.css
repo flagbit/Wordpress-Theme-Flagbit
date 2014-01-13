@@ -1053,88 +1053,87 @@ div.alignleft {
 }
 
 .postauthor{
-    margin: 20px 10px 30px 0px;
-    padding: 10px;
-    overflow: hidden;
-    border: 1px solid #D2D1D1;
-    box-shadow: 2px 3px 5px 0 #D2D1D1;
-    border-radius: 7px 7px 7px 7px;
-    background-color: #E5E5E5;
-    color: #606060;
-    margin-bottom: 20px;
+	margin: 20px 10px 30px 0px;
+	padding: 10px;
+	overflow: hidden;
+	border: 1px solid #D2D1D1;
+	box-shadow: 2px 3px 5px 0 #D2D1D1;
+	border-radius: 7px 7px 7px 7px;
+	background-color: #E5E5E5;
+	color: #606060;
+	margin-bottom: 20px;
 }
 
 .postauthor h4{
-    margin-top: 0px;
-    padding-top: 0px;
-    color: #0062A6;
+	margin-top: 0px;
+	padding-top: 0px;
+	color: #0062A6;
 }
 
 .postauthor .postauthorimage{
-    float:left;
+	float: left;
 }
 
 .postauthor p{
-    padding-left: 10px;
-    overflow: hidden;
+	padding-left: 10px;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 850px){
-    #header{
-        overflow: hidden;
-        height: 190px;
-    }
+	#header {
+		overflow: hidden;
+		height: 190px;
+	}
 
-    #slogan{
-        width: 66%;
-    }
+	#slogan {
+		width: 66%;
+	}
 
-    .content-wrapper{
-        width: 100%;
-    }
+	.content-wrapper {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 500px){
-    #header{
-        overflow: hidden;
-        height: 280px;
-    }
+	#header {
+		overflow: hidden;
+		height: 280px;
+	}
 
-    .logo{
-        margin-top: 6%;
-    }
+	.logo {
+		margin-top: 6%;
+	}
 
-    #slogan{
-        width: 100%;
-        margin-top: 27%;
+	#slogan {
+		width: 100%;
+		margin-top: 27%;
+	}
 
-    }
+	#topbar {
+		display: block;
+		overflow: hidden;
+		height: auto;
+		padding-bottom: 5px;
+	}
 
-    #topbar{
-        display: block;
-        overflow: hidden;
-        height: auto;
-        padding-bottom: 5px;
-    }
+	.content-wrapper {
+		width: 100%;
+	}
 
-    .content-wrapper{
-        width: 100%;
-    }
+	#footer {
+		min-height: 250px;
+	}
 
-    #footer{
-        min-height: 250px;
-    }
+	.footer-content {
+		min-height: 250px;
+	}
 
-    .footer-content{
-        min-height: 250px;
-    }
+	.sidebar {
+		width: 100% !important;
+		min-width: 240px !important;
+	}
 
-    .sidebar{
-        width: 100% !important;
-        min-width: 240px !important;
-    }
-
-    span#u_0_2{
-        display: block;
-    }
+	span#u_0_2 {
+		display: block;
+	}
 }

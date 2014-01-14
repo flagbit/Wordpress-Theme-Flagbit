@@ -12,4 +12,10 @@ function add_markup_categories($output) {
 
 add_filter('wp_list_categories', 'add_markup_categories');
 
+add_action ('get_header', 'my_filter_head');
+
+function my_filter_head () {
+	remove_action ('wp_head', '_admin_bar_bump_cb');
+}
+
 ?>

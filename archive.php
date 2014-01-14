@@ -43,6 +43,8 @@
 				<?php trackback_rdf(); ?>
 				-->
 
+				<?php the_tags ('<p>Tags: ', ', ', '</p>'); ?>
+
 			</div>
 
 		<?php endwhile; ?>

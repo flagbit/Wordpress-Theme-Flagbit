@@ -1,4 +1,4 @@
-/*  
+/*
 Theme Name: Flagbit Blog Design V2.1
 Theme URI: http://www.flagbit.de/
 Description: Das Flagbit Blog Design. Ähnlich wie Version 2.0, nur mit ein wenig mehr responsive.
@@ -60,6 +60,10 @@ Theme last updated: 14.01.2014
 	font-family: DaxWebBold;
 	src: url('fonts/DaxWeb-Bold.woff') format("woff");
 	font-style: normal;
+}
+
+html {
+	margin-top: 0 !important;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -1086,7 +1090,7 @@ div.alignleft {
 @media screen and (max-width: 870px) {
 	#slogan {
 		width: 60%;
-		top: 25px;
+		top: 40px;
 		margin-right: 0;
 	}
 
@@ -1103,8 +1107,8 @@ div.alignleft {
 
 @media screen and (max-width: 670px) {
 	#slogan {
-		font-size: 1.7em;
-		top: 0;
+		font-size: 1.5em;
+		top: 32px;
 	}
 
 	.footer-content .copy p > span {
@@ -1156,12 +1160,10 @@ div.alignleft {
 }
 
 @media screen and (max-width: 500px) {
-	#slogan {
-		width: 55%;
+	#content {
+		margin-top: 0;
 	}
-}
 
-@media screen and (max-width: 500px) {
 	.gallery-item dt {
 		margin-top: 0;
 	}
@@ -1172,8 +1174,9 @@ div.alignleft {
 	}
 
 	#slogan {
-		width: 60%;
-		font-size: 1.5em;
+		width: 65%;
+		font-size: 1.3em;
+		top: 34px;
 	}
 
 	#topbar {
@@ -1181,6 +1184,10 @@ div.alignleft {
 		overflow: hidden;
 		height: auto;
 		padding-bottom: 5px;
+	}
+
+	#topbar ul li {
+		margin-right: 5px;
 	}
 
 	.content-wrapper {
@@ -1194,5 +1201,13 @@ div.alignleft {
 
 	span#u_0_2 {
 		display: block;
+	}
+
+	.logo {
+		top: 65px;
+	}
+
+	.logo img {
+		max-width: 50%;
 	}
 }

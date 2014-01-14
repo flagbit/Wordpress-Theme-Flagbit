@@ -3,9 +3,15 @@
 	<?php if (have_posts()) : ?>
 		<h2><?php _e('Suchergebnis'); ?></h2>
 		<?php while (have_posts()) : the_post(); ?>
-			<div class="post">
-				<h2 class="posttitle" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanenter link zu'); ?> <?php the_title(); ?>"><?php the_title(); ?></a>&nbsp;<span class="author"><?php the_author() ?></span>&nbsp;<span class="date"><?php the_time('j. F Y') ?></span></h2>
-				<div class="postmeta"> 
+			<article class="post">
+				<header>
+					<h2 class="posttitle" id="post-<?php the_ID (); ?>"><a href="<?php the_permalink () ?>"
+							rel="bookmark"
+							title="<?php _e ('Permanenter link zu'); ?> <?php the_title (); ?>"><?php the_title (); ?></a>&nbsp;<span
+							class="author"><?php the_author () ?></span>&nbsp;<span
+							class="date"><?php the_time ('j. F Y') ?></span></h2>
+				</header>
+				<div class="postmeta">
 				<img src="<?php bloginfo('template_directory'); ?>/images/comment.png" border="0" alt="" />
 				<?php comments_popup_link(__('Kommentar'), __('Kommentare (1)'), __('Komentare (%)'), 'commentslink', __('Comments off')); ?>
 				</div>
@@ -17,8 +23,9 @@
 				<!--
 				<?php trackback_rdf(); ?>
 				-->
+				<?php the_tags ('<footer><p>Tags: ', ', ', '</p></footer>'); ?>
 
-			</div>
+			</article>
 
 		<?php endwhile; ?>
 
@@ -37,5 +44,5 @@
 	<?php endif; ?>
 </div>
 <?php get_sidebar(); ?>
-</div>
+</section>
 <?php get_footer(); ?>

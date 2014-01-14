@@ -1,31 +1,39 @@
 <?php get_header(); ?>
 <div class="content-wrapper">
 	<?php if (have_posts()) : ?>
+		<header>
+			<?php $post = $posts[0]; // Thanks Kubrick for this code ?>
 
-		<?php $post = $posts[0]; // Thanks Kubrick for this code ?>
+			<?php if (is_category ()) { ?>
+				<h2><?php _e ('Archiv zur Kategorie');
+					echo single_cat_title (); ?></h2>
 
-		<?php if (is_category()) { ?>				
-		<h2><?php _e('Archiv zur Kategorie'); echo single_cat_title(); ?></h2>
+			<?php } elseif (is_day ()) { ?>
+				<h2><?php _e ('Archiv vom');
+					the_time ('j.F, Y'); ?></h2>
 
-		<?php } elseif (is_day ()) { ?>
-			<h2><?php _e('Archiv vom'); the_time('j.F, Y'); ?></h2>
+			<?php } elseif (is_month ()) { ?>
+				<h2><?php _e ('Archiv des Monats ');
+					the_time ('F, Y'); ?></h2>
 
-		<?php } elseif (is_month()) { ?>
-		<h2><?php _e('Archiv des Monats '); the_time('F, Y'); ?></h2>
+			<?php } elseif (is_year ()) { ?>
+				<h2><?php _e ('Archive ');
+					the_time ('Y'); ?></h2>
 
-		<?php } elseif (is_year()) { ?>
-		<h2><?php _e('Archive '); the_time('Y'); ?></h2>
+			<?php } elseif (is_author ()) { ?>
+				<h2><?php _e ('Autoren Archiv'); ?></h2>
 
-		<?php } elseif (is_author()) { ?>
-		<h2><?php _e('Autoren Archiv'); ?></h2>
-
-		<?php } ?>
-
+			<?php } ?>
+		</header>
 		<?php while (have_posts()) : the_post(); ?>
 
-			<div class="post">
-
-				<h2 class="posttitle" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanenter link zu'); ?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+			<article class="post">
+				<header>
+					<h2 class="posttitle" id="post-<?php the_ID (); ?>"><a href="<?php the_permalink () ?>"
+							rel="bookmark"
+							title="<?php _e ('Permanenter link zu'); ?> <?php the_title (); ?>"><?php the_title (); ?></a>
+					</h2>
+				</header>
 
 				<div class="postinfo"><span class="author"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
 							<?php the_author() ?>
@@ -43,9 +51,9 @@
 				<?php trackback_rdf(); ?>
 				-->
 
-				<?php the_tags ('<p>Tags: ', ', ', '</p>'); ?>
+				<?php the_tags ('<footer><p>Tags: ', ', ', '</p></footer>'); ?>
 
-			</div>
+			</article>
 
 		<?php endwhile; ?>
 
@@ -61,5 +69,5 @@
 	<?php endif; ?>
 </div>
 <?php get_sidebar(); ?>
-</div>
+</section>
 <?php get_footer(); ?>

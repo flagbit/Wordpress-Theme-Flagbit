@@ -3,11 +3,15 @@
 	<?php if (have_posts()) : ?>
 		
 		<?php while (have_posts()) : the_post(); ?>
-		
-			<div class="post">
-	
-				<h2 class="posttitle" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanenter link zu'); ?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
-			
+
+			<article class="post">
+				<header>
+					<h1 class="posttitle" id="post-<?php the_ID (); ?>"><a href="<?php the_permalink () ?>"
+							rel="bookmark"
+							title="<?php _e ('Permanenter link zu'); ?> <?php the_title (); ?>"><?php the_title (); ?></a>
+					</h1>
+				</header>
+
 				<div class="postinfo">
 					<span class="author">
 						<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
@@ -30,10 +34,10 @@
 				<?php trackback_rdf(); ?>
 				-->
 
-				<?php the_tags ('<p>Tags: ', ', ', '</p>'); ?>
+				<?php the_tags ('<footer><p>Tags: ', ', ', '</p></footer>'); ?>
 
-			</div>
-				
+			</article>
+
 		<?php endwhile; ?>
 
 		<div class="navigation">
@@ -55,5 +59,5 @@
 	</div>
 
 <?php get_sidebar(); ?>
-</div>
+</section>
 <?php get_footer(); ?>

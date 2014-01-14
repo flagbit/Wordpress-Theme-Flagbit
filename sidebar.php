@@ -1,5 +1,5 @@
-<div class="sidebar" role="complementary">
-<ul>
+<aside class="sidebar" role="complementary">
+	<ul>
 	<li class="sidebar_category">
 		<div class="category_border">
 			<h2><?php _e('Kategorien'); ?></h2>
@@ -56,9 +56,8 @@
 			wp_fb_like();
 			echo '</p></li>';
 		}
-
 	?>
 
 </ul>
-</div>
+</aside>
 

@@ -53,29 +53,21 @@
 </head>
 
 <body>
-
 	<div id="wrapper">
-
 		<header id="header">
 			<div class="header-wrap">
-				<div id="slogan"><?php bloginfo ('description'); ?></div>
+				<h1 id="slogan"><?php bloginfo ('description'); ?></h1>
 
 				<div class="logo">
-					<h1>
-						<a href="<?php echo get_settings ('home'); ?>">
-							<img src="<?php print(get_stylesheet_directory_uri () . '/images/header_logo.png'); ?>"
-								alt="Logo der Magento und TYPO3 Agentur in Karlsruhe" />
-						</a>
-					</h1>
+					<a href="<?php echo get_settings ('home'); ?>">
+						<img src="<?php print(get_stylesheet_directory_uri () . '/images/header_logo.png'); ?>"
+							alt="Logo der Magento und TYPO3 Agentur in Karlsruhe" />
+					</a>
 				</div>
 			</div>
 		</header>
 
-		<div id="breadcrumb">
-			<?php if (function_exists ('bcn_display')) { ?>
-				Sie befinden sich hier:
-				<?php bcn_display ();
-			} ?>
-		</div>
+		<div id="breadcrumb"><?php if (function_exists ('bcn_display')) { ?>Sie befinden sich hier:<?php bcn_display ();
+			} ?></div>
 
-		<div id="content">
+		<section id="content">

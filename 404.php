@@ -1,12 +1,16 @@
 <?php get_header(); ?>
 
-<h2><?php _e('Nicht zu finden'); ?></h2>
+<div class="content-wrapper">
 
-<p><?php _e('Sorry, aber die angeforderte Seite war nicht aufzufinden.'); ?></p>
+    <h2><?php _e('Nicht zu finden'); ?></h2>
 
-<h3><?php _e('Suchen'); ?></h3>
+    <p><?php _e('Sorry, aber die angeforderte Seite war nicht aufzufinden.'); ?></p>
 
-<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+    <h3><?php _e('Suchen'); ?></h3>
+
+    <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+
+</div>
 
 <?php get_sidebar(); ?>
 

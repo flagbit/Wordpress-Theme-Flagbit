@@ -1,5 +1,5 @@
 <aside class="sidebar" role="complementary">
-	<ul>
+	<ul id="menu">
 	<li class="sidebar_category">
 		<div class="category_border">
 			<h2><?php _e('Kategorien'); ?></h2>

@@ -27,10 +27,45 @@
 	<link rel="pingback" href="<?php bloginfo ('pingback_url'); ?>" />
 	<link rel="publisher" href="https://plus.google.com/117279544987000527799" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="stylesheet" href="<?php print(get_stylesheet_directory_uri () . '/style.css'); ?>" />
+	<link rel="stylesheet" href="wp-content/themes/Wordpress-Theme-Flagbit-version2_1/style.css" />
 
 	<?php wp_get_archives ('type=monthly&format=link'); ?>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="wp-content/themes/Wordpress-Theme-Flagbit-version2_1/js/jRespond.min.js"></script>
+    <script src="wp-content/themes/Wordpress-Theme-Flagbit-version2_1/js/jquery.jpanelmenu.min.js"></script>
+    <script>
+        var jPanelMenu = {};
+        $(function() {
+
+
+            jPanelMenu = $.jPanelMenu({
+                menu: '#menu',
+                trigger: '.trigger',
+                animated: true
+            });
+            jPanelMenu.on();
+
+            $(document).on('click',jPanelMenu.menu + ' li a',function(e){
+                if ( jPanelMenu.isOpen() && $(e.target).attr('href').substring(0,1) == '#' ) { jPanelMenu.close(); }
+            });
+
+            $(document).on('click','#trigger-off',function(e){
+                jPanelMenu.off();
+                $('html').css('padding-top','40px');
+                $('#trigger-on').remove();
+                $('body').append('<a href="" title="Re-Enable jPanelMenu" id="trigger-on">Re-Enable jPanelMenu</a>');
+                e.preventDefault();
+            });
+
+            $(document).on('click','#trigger-on',function(e){
+                jPanelMenu.on();
+                $('html').css('padding-top',0);
+                $('#trigger-on').remove();
+                e.preventDefault();
+            });
+        });
+    </script>
 
 	<?php
 	if (is_singular () && get_option ('thread_comments')) {
@@ -56,6 +91,12 @@
 	<div id="wrapper">
 		<header id="header">
 			<div class="header-wrap">
+                <div class="trigger">
+                    <img class="trigger-normal-image" src="<?php print(get_stylesheet_directory_uri () . '/images/trigger.png'); ?>" alt="Trigger of the off-canvas menu"/>
+                    <img class="trigger-hover-image" src="<?php print(get_stylesheet_directory_uri () . '/images/trigger_hover.png'); ?>" alt="Trigger-hover of the off-canvas menu"/>
+                    <p>Menu</p>
+                </div>
+
 				<h1 id="slogan"><?php bloginfo ('description'); ?></h1>
 
 				<div class="logo">

@@ -27,13 +27,13 @@
 	<link rel="pingback" href="<?php bloginfo ('pingback_url'); ?>" />
 	<link rel="publisher" href="https://plus.google.com/117279544987000527799" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="stylesheet" href="wp-content/themes/Wordpress-Theme-Flagbit-version2_1/style.css" />
+	<link rel="stylesheet" href="<?php bloginfo ('home'); ?>/wp-content/themes/Wordpress-Theme-Flagbit-version2_1/style.css" />
 
 	<?php wp_get_archives ('type=monthly&format=link'); ?>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <script src="wp-content/themes/Wordpress-Theme-Flagbit-version2_1/js/jRespond.min.js"></script>
-    <script src="wp-content/themes/Wordpress-Theme-Flagbit-version2_1/js/jquery.jpanelmenu.min.js"></script>
+    <script src="<?php bloginfo ('home'); ?>/wp-content/themes/Wordpress-Theme-Flagbit-version2_1/js/jRespond.min.js"></script>
+    <script src="<?php bloginfo ('home'); ?>/wp-content/themes/Wordpress-Theme-Flagbit-version2_1/js/jquery.jpanelmenu.min.js"></script>
     <script>
         var jPanelMenu = {};
         $(function() {
@@ -92,8 +92,7 @@
 		<header id="header">
 			<div class="header-wrap">
                 <div class="trigger">
-                    <img class="trigger-normal-image" src="<?php print(get_stylesheet_directory_uri () . '/images/trigger.png'); ?>" alt="Trigger of the off-canvas menu"/>
-                    <img class="trigger-hover-image" src="<?php print(get_stylesheet_directory_uri () . '/images/trigger_hover.png'); ?>" alt="Trigger-hover of the off-canvas menu"/>
+                    <img class="trigger-normal-image" src="<?php print(get_stylesheet_directory_uri () . '/images/icons/transpTrgList.png'); ?>" alt="Trigger of the off-canvas menu"/>
                     <p>Menu</p>
                 </div>
 
@@ -101,7 +100,7 @@
 
 				<div class="logo">
 					<a href="<?php echo get_settings ('home'); ?>">
-						<img src="<?php print(get_stylesheet_directory_uri () . '/images/header_logo.png'); ?>"
+						<img src="<?php print(get_stylesheet_directory_uri () . '/images/logo_flagbit_blank.png'); ?>"
 							alt="Logo der Magento und TYPO3 Agentur in Karlsruhe" />
 					</a>
 				</div>

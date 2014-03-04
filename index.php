@@ -1,28 +1,18 @@
 <?php get_header(); ?>
+
 <div class="content-wrapper">
 	<?php if (have_posts()) : ?>
 		
 		<?php while (have_posts()) : the_post(); ?>
-
-			<article class="post">
-				<header>
-					<h1 class="posttitle" id="post-<?php the_ID (); ?>"><a href="<?php the_permalink () ?>"
-							rel="bookmark"
-							title="<?php _e ('Permanenter link zu'); ?> <?php the_title (); ?>"><?php the_title (); ?></a>
-					</h1>
-				</header>
-
-				<div class="postinfo">
-					<span class="author">
-						<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-							<?php the_author() ?>
-						</a>
-					</span>
-					&nbsp;
-					<span class="date"><?php the_time('j. F Y') ?></span>
-				</div>
+		
+			<div class="post">
+	
+				<h2 class="posttitle" id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanenter link zu'); ?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+			
+				<div class="postinfo"><span class="author"><?php the_author_posts_link() ?></span>&nbsp;<span class="date"><?php the_time('j. F Y') ?></span></div>
 			
 				<div class="postmeta"> 
+				<img src="<?php bloginfo('template_directory'); ?>/images/icons/kommentarblase.png" border="0" alt="" />
 				<?php comments_popup_link(__('Kommentar'), __('Kommentare (1)'), __('Komentare (%)'), 'commentslink', __('Comments off')); ?>
 				</div>
 			
@@ -33,11 +23,9 @@
 				<!--
 				<?php trackback_rdf(); ?>
 				-->
-
-				<?php the_tags ('<footer><p>Tags: ', ', ', '</p></footer>'); ?>
-
-			</article>
-
+			
+			</div>
+				
 		<?php endwhile; ?>
 
 		<div class="navigation">
@@ -56,7 +44,8 @@
 		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 
 	<?php endif; ?>
-	</div>
+
+</div>
 
 <?php get_sidebar(); ?>
 

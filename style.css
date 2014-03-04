@@ -1421,3 +1421,33 @@ div.alignleft {
         max-width: 50%;
     }
 }
+
+
+@media screen and (max-width: 350px){
+    #search {
+        width: 167px;
+        padding: 0px;
+    }
+
+    #s {
+        width: 123px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    #topbar ul {
+        padding: 0px;
+    }
+
+    #search {
+        width: 127px;
+    }
+
+    #s {
+        width: 83px;
+    }
+
+    #slogan {
+        font-size: 1.1em;
+    }
+}

@@ -12,11 +12,10 @@
 	<meta name="Copyright" content="Flagbit GmbH &amp; Co. KG" />
 	<meta name="Page-topic" content="<?php bloginfo ('description'); ?>" />
 	<meta name="Audience" content="Alle" />
-	<meta name="Description"
-		content="<?php wp_title ('&raquo;', true, 'right'); ?><?php bloginfo ('description'); ?>" />
+	<meta name="Description" content="<?php wp_title ('&raquo;', true, 'right'); ?><?php bloginfo ('description'); ?>" />
 	<meta name="generator" content="WordPress <?php bloginfo ('version'); ?>" />
 	<!-- leave this for stats -->
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 	<meta property="fb:admins" content="100002158337997" />
 

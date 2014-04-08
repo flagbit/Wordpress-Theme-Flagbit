@@ -133,7 +133,6 @@ tr.even td {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
 	margin: 0.6em 0 1.2em 0;
 	padding: 0.6em 0 0 0;
 }

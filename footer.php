@@ -5,7 +5,7 @@
     <div class="footer-content">
         <div class="address">
             <h3>Flagbit GmbH &amp; Co. KG</h3>
-            <p>Griesbachstraße 10<br />76815 Karlsruhe</p>
+            <p>Griesbachstraße 10<br />76185 Karlsruhe</p>
             <p>Tel: <a target="_blank" href="tel:+497219143480">+49 721 914 348 - 0</a><br />fax: +49 721 914 348 - 99<br />E-Mail:&nbsp;info@flagbit.de</p>
         </div>
         <div class="copy">
